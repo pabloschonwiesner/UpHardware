@@ -71,7 +71,6 @@ body {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	position: relative;
 }
 
 .containerLogo {
@@ -132,7 +131,6 @@ body {
 	background-color: #333;
 	height: 90px;
 	width: 100%;
-	position: absolute;
 	bottom: 0;
 	display: flex;
 	flex-direction: column;
@@ -175,7 +173,7 @@ body {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 560px) {
 	#container {
 		background-size: cover;
 		background-position: top left;
@@ -267,10 +265,16 @@ body {
 	#containerIcons {
 		display: none;
 	}
+
+	
+	#containerDatos > p, #containerDatos > a > p {
+		font-size: 1rem;
+	}
 }
 
 @media screen and (min-width: 900px) {
 	#pDireccion, #pTelefono, #pMail {
 		display: none;
 	}
+
 }

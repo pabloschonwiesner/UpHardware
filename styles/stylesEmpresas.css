@@ -275,6 +275,34 @@ header > div > a:nth-child(2) > figure {
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
 
+	header {
+		height: 70px;
+	}
+
+	header > div {
+		width: 100%;
+		min-width: 0;
+		padding: 0 0.5rem;
+		align-items: center;
+	}
+
+	header > div > a:nth-child(1) {
+		margin: 0 auto;
+	}
+
+	header > div > a:nth-child(1) > figure {
+		width: 75%;
+		margin: 0 auto;
+	}
+
+	header > div > a:nth-child(1) > figure > img {
+		width: 100%;
+	}
+
+	header > div > a:nth-child(2) {
+		display: none;
+	}
+
 	#containerDatos {
 		display: flex;
 		flex-direction: column;
@@ -285,10 +313,16 @@ header > div > a:nth-child(2) > figure {
 	#containerIcons {
 		display: none;
 	}
+
+
+	#containerDatos > p, #containerDatos > a > p {
+		font-size: 1rem;
+	}
 }
 
 @media screen and (min-width: 900px) {
 	#pDireccion, #pTelefono, #pMail {
 		display: none;
 	}
+
 }
